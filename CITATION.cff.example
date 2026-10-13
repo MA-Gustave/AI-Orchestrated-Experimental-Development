@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this research project and the exact release version used."
+title: "Beyond Writing Code: AI-Orchestrated Experimental Development and the Automation of Complexity"
+type: generic
+authors:
+  - name: "Gustave (public project identity; replace with confirmed publication byline)"
+repository-code: "https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development"
+# Replace this template with CITATION.cff after confirming author details and release.
+# Do not invent an ORCID, DOI, publication date, journal, or peer-review status.

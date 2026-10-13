@@ -1,0 +1,18 @@
+# Local/private editor and publication artifacts
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+*.tmp
+*.bak
+/build/
+/dist/
+/private/
+/.wiki-publish-work/

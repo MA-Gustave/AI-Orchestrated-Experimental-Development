@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="title desc">
+<title id="title">AI-Orchestrated Experimental Development — Abstract Mechanisms by Gustave</title>
+<desc id="desc">Academic title on warm paper, with a functional diagram linking intention, patterns, experiments, evidence, and revision.</desc>
+<rect width="1200" height="290" fill="#F3EFE4"/>
+<path d="M45 47H1155 M45 245H1155" stroke="#C4A25A" stroke-width="1.5"/>
+<text x="52" y="78" fill="#24455B" font-family="Arial, sans-serif" font-size="17" font-weight="bold" letter-spacing="3">RESEARCH / 001</text>
+<text x="52" y="135" fill="#1B1C1A" font-family="Arial, sans-serif" font-size="37" font-weight="bold">AI-Orchestrated Experimental</text>
+<text x="52" y="177" fill="#1B1C1A" font-family="Arial, sans-serif" font-size="37" font-weight="bold">Development</text>
+<text x="52" y="223" fill="#777873" font-family="Georgia, serif" font-size="19" font-style="italic">When implementation becomes an abstraction, evidence becomes essential.</text>
+<path d="M844 160H1100" stroke="#24455B" stroke-width="3" fill="none"/>
+<circle cx="860" cy="160" r="9" fill="#C4A25A" stroke="#1B1C1A" stroke-width="2"/>
+<circle cx="940" cy="160" r="9" fill="#91A18C" stroke="#1B1C1A" stroke-width="2"/>
+<circle cx="1020" cy="160" r="9" fill="#D95B38" stroke="#1B1C1A" stroke-width="2"/>
+<circle cx="1100" cy="160" r="9" fill="#24455B" stroke="#1B1C1A" stroke-width="2"/>
+<text x="838" y="195" fill="#777873" font-family="Arial, sans-serif" font-size="12">intent</text>
+<text x="918" y="195" fill="#777873" font-family="Arial, sans-serif" font-size="12">patterns</text>
+<text x="991" y="195" fill="#777873" font-family="Arial, sans-serif" font-size="12">tests</text>
+<text x="1076" y="195" fill="#777873" font-family="Arial, sans-serif" font-size="12">evidence</text>
+<text x="52" y="270" fill="#24455B" font-family="Arial, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">ABSTRACT MECHANISMS</text>
+<text x="291" y="270" fill="#777873" font-family="Georgia, serif" font-size="15" font-style="italic">by Gustave — Ideas made operational.</text>
+</svg>

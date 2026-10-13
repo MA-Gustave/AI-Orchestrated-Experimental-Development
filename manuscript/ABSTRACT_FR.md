@@ -1,0 +1,11 @@
+# Résumé — version de travail
+
+L'histoire de l'informatique peut être interprétée comme un déplacement récurrent de la complexité technique vers des mécanismes plus automatisés. À mesure qu'un ensemble d'opérations est encapsulé, le travail humain peut se déplacer de l'exécution détaillée vers la formulation d'objectifs, l'organisation de ressources et l'évaluation de résultats. L'intelligence artificielle générative rend cette évolution particulièrement visible dans le développement logiciel, sans supprimer les risques de défaillance ni rendre les compétences de programmation inutiles.
+
+Cet article examine une méthode de **développement expérimental orchestré par IA** à partir du projet indépendant RVV-VLA-Lab, consacré à l'exploration de stratégies de parsing JSON sur des processeurs RISC-V Vector. La méthode publique comprend la stabilisation de l'outillage, la constitution d'une bibliothèque de patterns techniques, la génération de configurations candidates, l'exécution de campagnes exploratoires, l'analyse des résultats positifs et négatifs et la conservation de rapports pour orienter les itérations futures. L'auteur conserve confidentiels certains détails de son workflow, tout en distinguant ces éléments des informations nécessaires pour évaluer les expériences publiées.
+
+Les campagnes natives documentées illustrent la diversité des performances selon les familles de documents, ainsi que l'intérêt des résultats négatifs. Elles ne prouvent pas, à elles seules, la supériorité générale de l'orchestration par IA. À partir de ce constat, l'article propose d'étudier l'utilisation de **métadonnées externes caractérisant les charges JSON** afin de guider la sélection de moteurs spécialisés, sous réserve d'une validation indépendante et de mesures incluant le coût des métadonnées.
+
+La contribution principale est un cadre d'analyse du **déplacement de la frontière d'abstraction** et un programme expérimental falsifiable qui relie organisation de la complexité, collaboration humain–IA et ingénierie de performance.
+
+**Mots-clés :** abstraction, automatisation, IA générative, programmation par intention, orchestration, expérimentation, RISC-V Vector, JSON, sélection d'algorithmes.

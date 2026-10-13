@@ -1,0 +1,22 @@
+{
+  "schema": "abstract-mechanisms-json-workload-profile/experimental-v0",
+  "source": "example-only-not-a-standard",
+  "target_document": {
+    "content_type": "application/json",
+    "byte_size": 8192,
+    "sha256": null
+  },
+  "features": {
+    "structural_density": "high",
+    "numeric_density": "medium",
+    "string_characteristics": "mostly-raw-utf8",
+    "escape_density": "low",
+    "feature_confidence": "unknown"
+  },
+  "hints": {
+    "preferred_plan": "utf8-optimized-candidate",
+    "advisory_only": true,
+    "fallback_if_unsupported": true
+  },
+  "validity_policy": "Always perform normal JSON and UTF-8 validation"
+}
