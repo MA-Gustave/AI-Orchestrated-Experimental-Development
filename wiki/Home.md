@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/MA-Gustave/AI-Orchestrated-Experimental-Development/main/assets/abstract-mechanisms-mark.svg" alt="Abstract Mechanisms logo" width="48" />
+<p align="center"><img src="https://raw.githubusercontent.com/MA-Gustave/AI-Orchestrated-Experimental-Development/main/assets/abstract-mechanisms-par-gustave.png" alt="Mécanismes Abstraits — par Gustave" width="760"></p>
 
 # AI-Orchestrated Experimental Development
 

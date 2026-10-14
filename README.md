@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/research-header.svg" alt="AI-Orchestrated Experimental Development — Abstract Mechanisms by Gustave" width="100%"></p>
+<p align="center"><img src="assets/abstract-mechanisms-par-gustave.png" alt="Mécanismes Abstraits — par Gustave" width="760"></p>
 
 # AI-Orchestrated Experimental Development
 
