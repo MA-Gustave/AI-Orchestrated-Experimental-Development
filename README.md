@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/abstract-mechanisms-par-gustave.png" alt="Mécanismes Abstraits — par Gustave" width="760"></p>
+<p align="center"><img src="https://github.com/MA-Gustave/MA-Gustave/blob/main/assets/LogoMAG.gif" alt="Mécanismes Abstraits — par Gustave"></p>
 
 # AI-Orchestrated Experimental Development
 
