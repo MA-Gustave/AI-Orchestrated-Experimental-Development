@@ -2,9 +2,17 @@
 
 ## Distinction des œuvres
 
-Ce dépôt documentaire a sa propre identité, son auteur à confirmer et ses textes originaux. Les projets [simdjson](https://github.com/simdjson/simdjson), [Simdjson-rvv-vla](https://github.com/MA-Gustave/Simdjson-rvv-vla) et [RVV-VLA-Lab](https://github.com/MA-Gustave/RVV-VLA-Lab) ne sont pas interchangeables. Les auteurs et les licences des portions de code réutilisées demeurent attribués à leurs titulaires légitimes.
+Ce dépôt documentaire a sa propre identité, son auteur à confirmer et ses textes originaux. Les projets [simdjson](https://github.com/simdjson/simdjson), [VectorPath-RVV](https://github.com/MA-Gustave/VectorPath-RVV) et [VLA-MethodLab](https://github.com/MA-Gustave/VLA-MethodLab) ne sont pas interchangeables. Les auteurs et les licences des portions de code réutilisées demeurent attribués à leurs titulaires légitimes.
 
 Un article consacré à la **méthode** n'implique pas que l'auteur revendique la création des algorithmes généraux antérieurs (parsing SIMD, autotuning, modèle de sélection d'algorithmes, synthèse automatique). Les références appropriées doivent être conservées.
+
+## Gouvernance, réserve de droits et perspective non publique
+
+La [politique IA de simdjson](https://github.com/simdjson/simdjson/blob/master/AI_USAGE_POLICY.md) exige une révision humaine du matériel généré, et non l'interdiction de toute contribution assistée par IA. Le laboratoire suit son propre cadre de développement expérimental indépendant.
+
+Les ajouts originaux effectivement couverts par une réserve valide dans **VLA-MethodLab** ou **VectorPath-RVV** ne font l'objet d'aucune nouvelle permission d'intégration dans le simdjson d'origine du seul fait de leur présentation ici. Les licences antérieures MIT/Apache 2.0 et les droits existants demeurent applicables. Les registres de provenance n'ont pas encore établi d'ajout précisément restreint.
+
+Une éventuelle intégration des technologies dans un écosystème logiciel sémantique plus vaste relève d'un projet prospectif. **Sa feuille de route reste confidentielle** et les détails sont destinés aux collaborateurs principaux directement concernés, selon les modalités appropriées. Voir [la note de gouvernance](GOUVERNANCE_INDEPENDANTE_ET_PERSPECTIVES.md).
 
 ## Provenance
 

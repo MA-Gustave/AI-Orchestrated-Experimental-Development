@@ -1,9 +1,9 @@
-# RVV-VLA-Lab case study: measurements as evidence of method
+# VLA-MethodLab case study: measurements as evidence of method
 
 ## Source projects
 
-- [RVV-VLA-Lab](https://github.com/MA-Gustave/RVV-VLA-Lab) — engine, orchestration, candidate patterns, test definitions and recorded evidence.
-- [Simdjson-rvv-vla](https://github.com/MA-Gustave/Simdjson-rvv-vla) — RVV-VLA backend development.
+- [VLA-MethodLab](https://github.com/MA-Gustave/VLA-MethodLab) — experimental method, orchestration, candidate patterns, test definitions and recorded evidence.
+- [VectorPath-RVV](https://github.com/MA-Gustave/VectorPath-RVV) — RVV-VLA implementation and engine development.
 - [Original simdjson](https://github.com/simdjson/simdjson) — upstream foundation; acknowledge its authors and licences.
 
 ## What was constructed
@@ -39,9 +39,13 @@ The lab produces a series of named, executable hypotheses, not simply an impleme
 
 ## Read the original study
 
-- [Study report](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/results/2026-10-11-stage-profile-8h.md)
-- [Pattern catalogue](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/experiments/PATTERN_LIBRARY.md)
-- [Methodology](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/METHODOLOGY.md)
-- [Adaptive v2 notes](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/ADAPTIVE_DISPATCH_V2.md)
+- [Study report](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/results/2026-10-11-stage-profile-8h.md)
+- [Pattern catalogue](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/experiments/PATTERN_LIBRARY.md)
+- [Methodology](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/METHODOLOGY.md)
+- [Adaptive v2 notes](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/ADAPTIVE_DISPATCH_V2.md)
 
 The original artifacts, including their own disclosures and corrections, take precedence over quotations in this interpretive repository.
+
+## Project governance and future research
+
+The independently governed engine and laboratory remain separate from upstream simdjson. The original software retains its licences, and no new right to integrate qualifying restricted additions is granted by this case study. A broader semantic-software direction is discussed only at a nontechnical level; the roadmap is nonpublic. See [Independent research governance](INDEPENDENT_GOVERNANCE_AND_ROADMAP.md).

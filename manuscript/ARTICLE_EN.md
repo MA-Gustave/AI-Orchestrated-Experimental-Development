@@ -3,7 +3,7 @@
 **Working manuscript · 13 October 2026 · Not peer reviewed**  
 **Author:** Gustave (public project identity; final academic byline to be confirmed)  
 **Project:** Abstract Mechanisms  
-**Research artifacts:** [RVV-VLA-Lab](https://github.com/MA-Gustave/RVV-VLA-Lab) and [Simdjson-rvv-vla](https://github.com/MA-Gustave/Simdjson-rvv-vla)
+**Research artifacts:** [VLA-MethodLab](https://github.com/MA-Gustave/VLA-MethodLab) and [VectorPath-RVV](https://github.com/MA-Gustave/VectorPath-RVV)
 
 ## Abstract
 
@@ -71,7 +71,7 @@ AI-generated reports can organize completed runs, compilations, rejections, grap
 
 Parts of the author's prompts and internal orchestration process remain private. This article discusses public principles and observable experimental artifacts. It therefore does not claim to measure the intrinsic superiority of a hidden procedure. If a future causal claim depends on reproducibility of that exact procedure, further disclosure or an independent protocol will be necessary. The author's responsibility for publication, source attribution and error correction is not delegated to the AI.
 
-## 5. RVV-VLA-Lab: an empirical case study
+## 5. VLA-MethodLab: an empirical case study
 
 The laboratory is based on an experimental modification of simdjson 5.0.3 for RISC-V Vector. It includes Stage 1 structural scanning components, Stage 2 integration with a generic tape builder, multiple candidate engine plans, native benchmarking, a remote orchestration layer and results-verification artifacts. The main scientific interest for this paper is the *existence and traceability of the experimental process*, not a claim that every planned engine is production-ready.
 
@@ -81,7 +81,11 @@ More interestingly, the same evidence indicates large differences by input type.
 
 There are serious limits. The historical test source came from a **modified working-tree snapshot**, so the cited upstream SHA alone is insufficient to reconstruct exactly the executed code. The correctness gates cover meaningful cases but not exhaustive JSON conformance, differential fuzzing or broad cross-device testing. Samples from repeated benchmark loops are not independent experimental units. Results were recorded principally on one RISC-V machine, and some corpora were synthetic or reused contents. A designed campaign that has not produced native measurements must not be promoted to a successful benchmark.
 
-Under these constraints, RVV-VLA-Lab illustrates a feasible and documented organization of assisted research. It does **not** isolate the causal effect of AI assistance on performance, time spent, cost or reliability.
+Under these constraints, VLA-MethodLab illustrates a feasible and documented organization of assisted research. It does **not** isolate the causal effect of AI assistance on performance, time spent, cost or reliability.
+
+### Independent governance and distribution boundaries
+
+The upstream [simdjson AI usage policy](https://github.com/simdjson/simdjson/blob/master/AI_USAGE_POLICY.md) permits AI-assisted contributions that have been meaningfully reviewed and understood by an accountable human contributor; it does not ban every use of generative AI. Because this research adopts an AI-orchestrated experimental process and distinct research governance, **VLA-MethodLab** and **VectorPath-RVV** are maintained as independent projects, rather than submissions to upstream simdjson. Their qualifying original additions are subject only to the rights actually established by the projects' licences, provenance and applicable prior grants; this paper does not authorize otherwise-unlicensed incorporation into upstream simdjson. A possible extension into a broader semantic software ecosystem is a confidential longer-term direction, not a published design or demonstrated result. See [governance and rights](../docs/INDEPENDENT_GOVERNANCE_AND_ROADMAP.md).
 
 ## 6. Hypothesis: optional JSON workload metadata
 
@@ -103,7 +107,7 @@ Since a single case study has neither random assignment nor a matched control, i
 
 The central conceptual move is not from human intelligence to an all-knowing machine. It is from direct manipulation of code to control over the experiments and systems that produce, evaluate and revise code. That shift may widen participation in certain kinds of technical development, but it also increases the importance of validating artifacts one cannot easily read line by line. The risk is epistemic: confidently generated but incorrect experiments can scale errors as effectively as they scale productive work.
 
-The philosophical analogy with form and material composition captures the fact that organized structures become reusable components. Simon's hierarchies and Licklider's symbiosis offer stronger modern scientific frameworks; program synthesis, autotuning and coding agents provide direct technical predecessors. RVV-VLA-Lab links these strands through a tangible case that documents both surprising performance behavior and limitations of assisted exploration.
+The philosophical analogy with form and material composition captures the fact that organized structures become reusable components. Simon's hierarchies and Licklider's symbiosis offer stronger modern scientific frameworks; program synthesis, autotuning and coding agents provide direct technical predecessors. VLA-MethodLab links these strands through a tangible case that documents both surprising performance behavior and limitations of assisted exploration.
 
 ## 9. Conclusion
 

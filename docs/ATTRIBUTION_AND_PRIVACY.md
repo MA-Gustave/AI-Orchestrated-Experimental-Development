@@ -8,6 +8,14 @@ The public project identity is **Gustave** (Abstract Mechanisms). The final acad
 
 The RVV-VLA implementations derive from simdjson. Acknowledge original simdjson authors, source origins, copyright notices and applicable licence conditions. Do not imply that this manuscript originated the whole JSON parser or that an upstream project has approved the experimental implementation. Distinguish original RVV changes, modifications to existing code, and borrowed techniques.
 
+## Independent governance, code rights and future direction
+
+The [simdjson AI Usage Policy](https://github.com/simdjson/simdjson/blob/master/AI_USAGE_POLICY.md) permits AI-assisted material after meaningful human review; unreviewed LLM submissions are not acceptable. The research laboratory follows a different, independently governed experimentation and validation workflow. This difference is described without an allegation about upstream maintainers or a claim that AI assistance is categorically banned.
+
+Publication of this paper does not grant new rights to incorporate qualifying independently owned, rights-reserved additions into upstream simdjson or other projects. Previous MIT/Apache permissions and other applicable rights remain unaffected. The software projects' provenance registers do not yet verify specific newly covered additions. See [Research governance and rights](INDEPENDENT_GOVERNANCE_AND_ROADMAP.md).
+
+An exploratory longer-term direction involving a broader semantic software ecosystem is acknowledged at a high level only. Detailed architectural plans and collaboration terms are not made public; details may be shared selectively with directly involved core collaborators. Publicly testable claims must remain grounded in disclosed evidence.
+
 ## Code provenance and historical disputes
 
 Preserve original commits, public links, release records and legitimate communications when documenting priority and provenance. Avoid claims of misconduct or infringement without a file-by-file chronology and evidence. The article's purpose is the research method, not a personal allegation. Consult appropriate expertise if a separate legal/licensing dispute arises.

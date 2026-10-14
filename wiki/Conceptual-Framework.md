@@ -1,21 +1,25 @@
 # Conceptual framework
 
-## Form and composed structure
+## Form, matter, and composed levels
 
-In Aristotle's hylomorphism, a thing is understood through matter and form. The *relative* nature of matter suggests a useful analogy: clay shaped into bricks can itself become the material of a wall. The analogy illustrates nested composition. It is not a theory of programming or a claim that abstract forms chronologically precede matter.
+Aristotle's account of **form and matter** (hylomorphism) offers a *philosophical analogy*, not a predictive model of computing. A composed thing may become the material for another composition: organized bricks can become the building blocks of a wall. On this reading, **the composite** is organized by form; matter by itself is not simply a higher level of complexity. The priority of actuality or form is primarily explanatory, not necessarily temporal.
 
-## Hierarchy and human–machine collaboration
+Reference: Aristotle, *Metaphysics* VII–IX and *De Anima* II.1; [Stanford Encyclopedia of Philosophy, Form vs. Matter](https://plato.stanford.edu/entries/form-matter/).
 
-- **Herbert Simon (1962):** complex systems often exhibit hierarchical, nearly decomposable organization.
-- **J. C. R. Licklider (1960):** people and computers can work symbiotically, distributing formulation and routine procedures between them.
-- **Douglas Engelbart (1962):** intellectual augmentation involves tools, language, processes and people.
+## Hierarchy and nearly decomposable systems
 
-## Critical limits
+[Herbert A. Simon (1962), *The Architecture of Complexity*](https://www.jstor.org/stable/985254) provides a more direct account of hierarchies and semi-independent subsystems. A component is useful at a higher level when its behavior can be relied on without reproducing its internal mechanisms every time.
 
-**Bainbridge (1983)** warns that automation can make the remaining human exceptions harder. **Brooks (1987)** reminds us that a better tool does not erase essential complexity. **Parasuraman et al. (2000)** distinguishes what is automated: collection, analysis, decision or execution.
+## Human–machine work distribution
 
-The proposed term *automation-driven abstraction shift* names an analytical possibility, not an established universal law.
+- [J. C. R. Licklider (1960), *Man-Computer Symbiosis*](https://doi.org/10.1109/THFE2.1960.4503259) describes complementary human and machine roles in problem solving.
+- [Douglas C. Engelbart (1962), *Augmenting Human Intellect*](https://dougengelbart.org/pubs/augment-3906-Framework.html) emphasizes that augmentation involves tools, language, procedures, and organization.
+- [Parasuraman, Sheridan & Wickens (2000)](https://doi.org/10.1109/3468.844354) distinguish the automation of information collection, analysis, decision selection, and action.
 
-Full text: [Conceptual Framework](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development/blob/main/docs/CONCEPTUAL_FRAMEWORK.md).
+## Important counterweights
 
-**Next:** [[Experimental-Method]] · [[Reading-List]].
+[Lisanne Bainbridge (1983), *Ironies of Automation*](https://doi.org/10.1016/0005-1098(83)90046-8) highlights the harder supervisory problems left behind by automation. [Frederick P. Brooks (1987), *No Silver Bullet*](https://doi.org/10.1109/MC.1987.1663532) distinguishes complexity intrinsic to a problem from difficulties introduced by a particular implementation technique.
+
+The phrase **automation-driven abstraction shift** is a proposed analytical label in this project, not an established universal historical law.
+
+**Continue:** [[Automation-and-Abstraction]] · [[Reading-List]]

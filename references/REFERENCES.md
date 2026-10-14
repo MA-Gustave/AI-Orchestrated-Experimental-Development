@@ -46,10 +46,15 @@ These are research starting points, **not** quotations of their authors or evide
 
 **Bray, Tim (2017).** *The JavaScript Object Notation (JSON) Data Interchange Format*, RFC 8259. [RFC Editor](https://www.rfc-editor.org/info/rfc8259/). JSON syntax and interoperability; no universal performance-profile field is defined.
 
-**MA-Gustave (2026).** [RVV-VLA-Lab](https://github.com/MA-Gustave/RVV-VLA-Lab) and [Simdjson-rvv-vla](https://github.com/MA-Gustave/Simdjson-rvv-vla). Primary project source and measurements, **not independent peer-reviewed confirmation**. A publication should freeze version SHA, access date and software archive IDs when available.
+**MA-Gustave (2026).** [VLA-MethodLab](https://github.com/MA-Gustave/VLA-MethodLab) and [VectorPath-RVV](https://github.com/MA-Gustave/VectorPath-RVV). Primary project source and measurements, **not independent peer-reviewed confirmation**. A publication should freeze version SHA, access date and software archive IDs when available.
 
 **simdjson contributors.** [Official simdjson repository](https://github.com/simdjson/simdjson). Source project that the RVV-VLA experiments build upon. Respect existing software attributions and source licences.
 
 ## Evidence hierarchy
 
 Peer-reviewed sources support prior research; editions of philosophical primary texts support historical interpretation; raw benchmark files and exact builds support quantitative experimental claims; preprints require status labels; this project's documentation supports statements about *the project itself*, not independent validation.
+
+## Software governance primary source
+
+- [simdjson AI Usage Policy](https://github.com/simdjson/simdjson/blob/master/AI_USAGE_POLICY.md) — permits AI-assisted work when the contributor personally reviews it, understands it and remains accountable; rejects unreviewed submissions.
+- [VLA-MethodLab rights and scope](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/LICENSE-SCOPE.md) and [VectorPath-RVV rights and scope](https://github.com/MA-Gustave/VectorPath-RVV/blob/main/LICENSE-SCOPE.md). Scope is conditional; prior grants remain effective.

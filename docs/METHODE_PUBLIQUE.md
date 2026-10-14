@@ -52,7 +52,7 @@ Retester les hypothèses prometteuses sur des corpus tenus à l'écart, si possi
 | Banc natif | Mesurer les effets matériels observables | Référence distincte, répétitions, mesures appariées |
 | Lecteur indépendant | Recalculer, contester, répliquer | Artefacts suffisants et contradictions accessibles |
 
-## Ce que RVV-VLA-Lab fait — et ne fait pas — dans l'état documenté
+## Ce que VLA-MethodLab fait — et ne fait pas — dans l'état documenté
 
 - Bibliothèque fixe **E00–E14** de plans d'optimisation effectivement définie.
 - Campagnes natives GCC et rapports documentés.

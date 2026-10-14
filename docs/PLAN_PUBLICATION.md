@@ -20,7 +20,7 @@ Ce dépôt contient un manuscrit **non révisé par des pairs** et une bibliogra
 ### A. Article conceptuel et méthodologique (priorité)
 
 - Sujet central : changement de rôle humain dans le développement technique.
-- RVV-VLA-Lab = étude de cas avec preuves et limites.
+- VLA-MethodLab = étude de cas avec preuves et limites.
 - Métadonnées JSON = orientation de recherche future.
 - Critère de qualité : originalité du cadre argumentatif, articulation aux travaux antérieurs et rigueur des limites.
 

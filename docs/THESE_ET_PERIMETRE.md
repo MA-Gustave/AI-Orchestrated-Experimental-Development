@@ -10,7 +10,7 @@
 
 1. **Un cadre d'analyse** de la « frontière d'abstraction » entre l'opérateur, l'IA, le code, les systèmes de compilation, les tests et les machines.
 2. **Une description publique de méthode** : structurer les patterns d'optimisation, créer des variantes, mesurer, conserver la mémoire expérimentale, itérer.
-3. **Une étude de cas située** : RVV-VLA-Lab, avec résultats natifs et échecs documentés, notamment la détection de stratégies utiles et nuisibles selon les familles JSON.
+3. **Une étude de cas située** : VLA-MethodLab, avec résultats natifs et échecs documentés, notamment la détection de stratégies utiles et nuisibles selon les familles JSON.
 4. **Une hypothèse technique prospective** : l'usage facultatif de métadonnées décrivant les charges JSON pour aider un parseur à choisir son plan.
 
 ## Ce que l'article ne prétend pas

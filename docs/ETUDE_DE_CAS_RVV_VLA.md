@@ -1,12 +1,12 @@
-# RVV-VLA-Lab : étude de cas documentée
+# VLA-MethodLab : étude de cas documentée
 
 ## Projets de référence
 
-- Laboratoire : https://github.com/MA-Gustave/RVV-VLA-Lab
-- Backend expérimental : https://github.com/MA-Gustave/Simdjson-rvv-vla
-- Bibliothèque de plans : https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/experiments/PATTERN_LIBRARY.md
-- Rapport natif du 11 octobre : https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/results/2026-10-11-stage-profile-8h.md
-- Méthodologie : https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/METHODOLOGY.md
+- Laboratoire : https://github.com/MA-Gustave/VLA-MethodLab
+- Backend expérimental : https://github.com/MA-Gustave/VectorPath-RVV
+- Bibliothèque de plans : https://github.com/MA-Gustave/VLA-MethodLab/blob/main/experiments/PATTERN_LIBRARY.md
+- Rapport natif du 11 octobre : https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/results/2026-10-11-stage-profile-8h.md
+- Méthodologie : https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/METHODOLOGY.md
 
 ## Fonction du cas dans l'article
 
@@ -50,3 +50,7 @@ Le DOM des documents à structuraux denses atteint **2,392×** pour E14, tandis 
 ## Lecture méthodologique
 
 La valeur du cas tient à la capacité à organiser de nombreux plans, à documenter les erreurs et à faire apparaître les régimes où différentes stratégies semblent appropriées. Pour démontrer que l'**IA** est la cause des progrès, il faudrait un protocole comparatif mesurant le rôle des différentes formes d'assistance et leur coût.
+
+## Gouvernance et perspectives
+
+Les projets techniques conservent une gouvernance autonome. La publication de cette étude ne constitue pas une autorisation d’intégration d’ajouts originaux valablement réservés dans le projet simdjson de base. Une perspective d’écosystème sémantique élargi existe, mais le plan technique demeure non public. Voir [Gouvernance indépendante et perspectives](GOUVERNANCE_INDEPENDANTE_ET_PERSPECTIVES.md).

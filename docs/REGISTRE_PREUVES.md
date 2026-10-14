@@ -4,7 +4,7 @@
 
 | ID | Affirmation | Statut | Source principale | Limites |
 |---|---|---|---|---|
-| F01 | 15 plans E00–E14 préétablis | **Documenté** | `RVV-VLA-Lab/experiments/PATTERN_LIBRARY.md` et `patterns.json` | Plans fixes ; pas d'évolution autonome prouvée |
+| F01 | 15 plans E00–E14 préétablis | **Documenté** | `VLA-MethodLab/experiments/PATTERN_LIBRARY.md` et `patterns.json` | Plans fixes ; pas d'évolution autonome prouvée |
 | F02 | 3 h : 2 469 observations, E14 DOM 1,473× | **Rapport de campagne** | `docs/evidence/analysis.md` | Corpus limités, ordre fixe, corrections smoke |
 | F03 | 8 h : 6 887 observations, E14 DOM 1,502×, Stage 1 1,601×, Stage 2 1,298× | **Rapport de campagne** | `docs/results/2026-10-11-stage-profile-8h.md` | Même machine, phases mesurées indépendamment |
 | F04 | E14 Stage 1 0,417× sur échappements | **Rapport de campagne** | Même rapport, section « families » | Fait interne distinct du résultat DOM |
@@ -21,12 +21,12 @@
 
 ## Références source (relatives aux dépôts réels)
 
-- [Rapport 8 h](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/results/2026-10-11-stage-profile-8h.md)
-- [Rapport d'analyse 3 h](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/evidence/analysis.md)
-- [Patterns](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/experiments/PATTERN_LIBRARY.md)
-- [Méthodologie](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/METHODOLOGY.md)
-- [Test 89 / correction de Test 88](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/TEST89_CORRECTED_PREQUAL_60M.md)
-- [Test 90 / holdout](https://github.com/MA-Gustave/RVV-VLA-Lab/blob/main/docs/TEST90_HOLDOUT_2H.md)
+- [Rapport 8 h](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/results/2026-10-11-stage-profile-8h.md)
+- [Rapport d'analyse 3 h](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/evidence/analysis.md)
+- [Patterns](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/experiments/PATTERN_LIBRARY.md)
+- [Méthodologie](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/METHODOLOGY.md)
+- [Test 89 / correction de Test 88](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/TEST89_CORRECTED_PREQUAL_60M.md)
+- [Test 90 / holdout](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/TEST90_HOLDOUT_2H.md)
 
 ## Vérifications à effectuer avant la publication d'un article évalué
 
@@ -36,3 +36,7 @@
 - Ajouter validation de conformité/fuzzing et contrôle d'un second matériel si revendication générale.
 - Publier les résultats bruts positifs **et** négatifs, y compris mesures manquantes et causes d'échec.
 - Préciser comment l'auteur a utilisé l'IA, sans divulguer de secrets non essentiels, et respecter les règles de la revue.
+
+## Politique IA, droits et confidentialité
+
+La [politique simdjson](https://github.com/simdjson/simdjson/blob/master/AI_USAGE_POLICY.md) autorise des contributions assistées par IA sous responsabilité humaine ; elle n’est pas une interdiction absolue. Les réserves de droits sur les ajouts originaux demeurent conditionnelles à leur provenance et aux permissions antérieures. Le développement envisagé dans un écosystème sémantique élargi est une **orientation confidentielle annoncée par l’auteur**, non un résultat expérimental. Détails : [gouvernance](GOUVERNANCE_INDEPENDANTE_ET_PERSPECTIVES.md).

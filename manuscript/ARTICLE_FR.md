@@ -14,7 +14,7 @@ L'histoire de l'informatique fournit de nombreux exemples de séparation entre l
 
 L'intelligence artificielle générative rend possible un autre déplacement. Un opérateur peut formuler une tâche en langage naturel, demander la production de programmes, leur soumettre des résultats d'exécution et faire élaborer des variantes successives. Ce mouvement ne rend pas le code « désuet » au sens universel : il rend certaines opérations de codage **délégables**, tout en accentuant la nécessité de critères indépendants de vérification. Une formulation utile de cette évolution est le **déplacement de la frontière d'abstraction par l'automatisation**.
 
-L'article propose d'étudier cette transformation à partir d'une méthode de travail publiquement décrivable et d'un projet technique concret : RVV-VLA-Lab, un laboratoire d'expérimentation pour des moteurs JSON vectorisés sur RISC-V.
+L'article propose d'étudier cette transformation à partir d'une méthode de travail publiquement décrivable et d'un projet technique concret : VLA-MethodLab, un laboratoire d'expérimentation pour des moteurs JSON vectorisés sur RISC-V.
 
 ## 2. Fondements : organisation, abstraction et collaboration humain-machine
 
@@ -50,7 +50,7 @@ La méthode déclarée se présente comme une boucle de développement, mais tou
 
 **(2) Construire une bibliothèque de patterns.** L'IA est sollicitée pour identifier et formaliser des motifs d'optimisation potentiellement utiles. L'opérateur n'affirme pas connaître ou maîtriser chaque motif de bas niveau. La bibliothèque représente donc un répertoire d'hypothèses techniques révisable, et non une collection de vérités prévalidées.
 
-**(3) Composer des candidats.** Des combinaisons de patterns deviennent des configurations de test. Dans le cas documenté, **E00–E14 constituent quinze plans fixes** décrits dans le code et les manifestes de RVV-VLA-Lab. Leur orchestration expérimentale ne doit pas être confondue avec une recherche évolutionnaire autonome ou une commutation arbitraire entre binaires à l'exécution.
+**(3) Composer des candidats.** Des combinaisons de patterns deviennent des configurations de test. Dans le cas documenté, **E00–E14 constituent quinze plans fixes** décrits dans le code et les manifestes de VLA-MethodLab. Leur orchestration expérimentale ne doit pas être confondue avec une recherche évolutionnaire autonome ou une commutation arbitraire entre binaires à l'exécution.
 
 **(4) Mesurer et contrôler.** Les campagnes natives confrontent les plans à des familles variées de documents JSON. L'objectif initial est exploratoire : repérer des tendances, régressions et résultats inattendus. Des expériences confirmatoires distinctes doivent ensuite vérifier les hypothèses sans réutiliser le même corpus pour choisir et proclamer simultanément les « gagnants ».
 
@@ -58,9 +58,9 @@ La méthode déclarée se présente comme une boucle de développement, mais tou
 
 L'auteur conserve une partie de ses instructions et procédés d'orchestration confidentielle. Le protocole public précise en revanche les **éléments observables** que d'autres peuvent inspecter : configurations, environnement, corpus, mesures et limites. Il faut éviter de faire reposer toute affirmation vérifiable sur une procédure secrète impossible à auditer.
 
-## 5. Étude de cas : RVV-VLA-Lab
+## 5. Étude de cas : VLA-MethodLab
 
-Le dépôt [RVV-VLA-Lab](https://github.com/MA-Gustave/RVV-VLA-Lab) regroupe une bibliothèque de moteurs spécialisés, un orchestrateur d'expériences, des scripts de vérification et des mesures sur matériel natif RISC-V Vector. Le dépôt [Simdjson-rvv-vla](https://github.com/MA-Gustave/Simdjson-rvv-vla) documente un backend expérimental indépendant de la longueur des vecteurs.
+Le dépôt [VLA-MethodLab](https://github.com/MA-Gustave/VLA-MethodLab) regroupe une bibliothèque de moteurs spécialisés, un orchestrateur d'expériences, des scripts de vérification et des mesures sur matériel natif RISC-V Vector. Le dépôt [VectorPath-RVV](https://github.com/MA-Gustave/VectorPath-RVV) documente un backend expérimental indépendant de la longueur des vecteurs.
 
 La campagne du **11 octobre 2026** a comparé quatre configurations sur une **BPI-F3**, sous Linux `riscv64`, RVV `VLEN=256`, avec **GCC 14.2** et des compilations adaptées aux backends. Elle a enregistré **6 887 observations**. Sur les corpus étudiés, le plan E14 a atteint des **rapports géométriques de débit** de **1,502× en DOM**, **1,601× en Stage 1** et **1,298× en Stage 2** par rapport au backend officiel VLS256 de simdjson v5.0.3. Ces mesures représentent des appels distincts, et les durées Stage 1 et Stage 2 ne doivent pas être additionnées pour reconstituer le temps DOM.
 
@@ -69,6 +69,10 @@ La diversité des résultats est scientifiquement plus instructive que le classe
 Cette lecture exige plusieurs réserves : la suite de correction n'est pas exhaustive ; les essais proviennent d'un matériel principal et de corpus en partie synthétiques ; des observations répétées ne constituent pas des échantillons indépendants ; surtout, la version historiquement mesurée provenait d'un **checkout modifié**, que le seul SHA amont ne permet pas de reconstruire à l'identique. Les détails chiffrés et le statut de chaque campagne sont consignés dans le [registre des preuves](../docs/REGISTRE_PREUVES.md).
 
 Le **Test 88**, conçu pour élargir l'exploration, a échoué avant de produire des observations de performance à cause d'un décalage entre le nombre d'itérations demandé et la limite acceptée par le banc natif. Cet échec documenté est méthodologiquement important : la production automatisée d'expériences amplifie aussi les erreurs d'orchestration. Les Test 89/90 apparaissent dans les documents consultés comme protocoles, et non comme preuves de gains natifs déjà établis.
+
+### Gouvernance indépendante et limites des autorisations
+
+La [politique d'utilisation de l'IA de simdjson](https://github.com/simdjson/simdjson/blob/master/AI_USAGE_POLICY.md) admet les contributions assistées par IA sous réserve d'une révision humaine réelle, d'une compréhension suffisante et de la responsabilité du contributeur ; elle n'interdit pas catégoriquement l'IA. Le présent programme de recherche repose sur une orchestration expérimentale distincte : **VLA-MethodLab** et **VectorPath-RVV** sont donc maintenus indépendamment du projet original. Le présent article n'accorde aucune autorisation nouvelle d'incorporer au simdjson d'origine des ajouts originaux valablement réservés, sans remettre en cause les licences déjà accordées. Une intégration éventuelle dans un écosystème logiciel sémantique élargi reste une orientation confidentielle, non une architecture publiée ou un résultat prouvé. Voir [gouvernance et droits](../docs/GOUVERNANCE_INDEPENDANTE_ET_PERSPECTIVES.md).
 
 ## 6. Vers des métadonnées descriptives de charge JSON
 
@@ -88,7 +92,7 @@ Cette évaluation doit également reconnaître les compétences tacites de l'op�
 
 Le développement orchestré par IA peut être compris comme une évolution de la manière dont l'humain gère la complexité : au lieu d'intervenir exclusivement sur les instructions, il peut concevoir des espaces de solutions, des dispositifs expérimentaux et des procédures d'évaluation. La mise en place d'un laboratoire mesurable transforme les suggestions de l'IA en propositions testables, tandis que les résultats, y compris négatifs, alimentent de nouvelles décisions.
 
-L'analogie aristotélicienne aide à penser les compositions successives ; la théorie des systèmes complexes et les recherches sur l'automatisation donnent les instruments modernes d'analyse. RVV-VLA-Lab constitue une étude de cas de cette dynamique. La conclusion défendable aujourd'hui est **la faisabilité documentée d'une telle organisation et l'existence de questions de recherche précises** — non la disparition du besoin de programmation, ni la supériorité universelle de l'IA, ni un nouveau standard JSON établi.
+L'analogie aristotélicienne aide à penser les compositions successives ; la théorie des systèmes complexes et les recherches sur l'automatisation donnent les instruments modernes d'analyse. VLA-MethodLab constitue une étude de cas de cette dynamique. La conclusion défendable aujourd'hui est **la faisabilité documentée d'une telle organisation et l'existence de questions de recherche précises** — non la disparition du besoin de programmation, ni la supériorité universelle de l'IA, ni un nouveau standard JSON établi.
 
 ## Bibliographie
 

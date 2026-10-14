@@ -1,17 +1,26 @@
 # Evidence and limitations
 
-The research separates **measured observation**, **conceptual interpretation**, **operator report**, and **untested hypothesis**. A project's public README is a primary source for its own experiments, but not independent scientific validation of them.
+The project treats **evidence classification** as part of the research method. Not every statement in the manuscript has the same evidentiary status.
 
-## Key limits to disclose
+| Classification | What it means | Example |
+| --- | --- | --- |
+| Recorded observation | Traceable to reports or released measurement files | E14 DOM geometric-mean ratio in the eight-hour study |
+| Method description | Public account of procedures and source-code artifacts | Fixed E00–E14 hypotheses and native campaign orchestration |
+| Conceptual interpretation | Philosophical and engineering analogy | Automation can shift the human-facing abstraction boundary |
+| Untested hypothesis | A prospective mechanism that needs controlled tests | External workload hints improve end-to-end JSON parsing |
 
-- The historical native benchmark source was a modified checkout: its upstream SHA does not identify the exact measured code alone.
-- Basic valid/invalid JSON smoke tests do not establish full conformance or memory safety.
-- One CPU/compilation environment does not establish cross-platform behavior.
-- Exploratory wins can reflect selection bias. Negative workload cases must remain visible.
-- Stage 1, Stage 2 and DOM timings are independent measurement paths; do not add reported ratios.
-- Current evidence cannot establish that AI orchestration caused a given performance gain or saved development time.
-- No tested implementation establishes benefits from external JSON workload profiles yet.
+## Known limitations
 
-The main repository hosts an [Evidence Ledger](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development/blob/main/docs/EVIDENCE_LEDGER.md) with links to each technical source and claim type.
+1. **Provenance gap:** a historical dirty source tree cannot be reconstructed merely from an upstream SHA.
+2. **Correctness coverage:** successful basic valid/invalid smoke tests do not establish complete conformance or memory safety.
+3. **Single hardware environment:** reported native performance depends on one CPU family, VLEN and compiler.
+4. **Benchmark sampling:** artificial corpora, repeated inputs and correlated trials constrain generalization.
+5. **Negative observations:** workload-specific regressions must appear alongside headline improvements.
+6. **No comparative productivity experiment:** the case study contains no controlled time/cost or human-expertise comparison between AI-orchestrated and conventional workflows.
+7. **Undemonstrated metadata benefit:** payload profiling via external metadata has not been evaluated as a deployed architecture.
 
-**Next:** [[Reading-List]] · [[Contributing]].
+## Evidence audit
+
+Use the main project's [Evidence Ledger](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development/blob/main/docs/EVIDENCE_LEDGER.md) and the Lab's [methodology](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/METHODOLOGY.md). Prefer the underlying raw data and verification scripts when available.
+
+**Continue:** [[Research-Questions]] · [[Contributing]]
