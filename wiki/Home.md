@@ -16,7 +16,8 @@ The central question is not simply whether a parser ran faster. It is **how an o
 | [[Research-Thesis]] | The argument, its boundaries, and the central research question |
 | [[Conceptual-Framework]] | Aristotle, hierarchy, human–machine collaboration, and automation |
 | [[Experimental-Method]] | The disclosed experimental loop and validation responsibilities |
-| [[RVV-VLA-Case-Study]] | The reported native measurements and their limitations |
+| **[[Final-Native-Results-2026-10-18]]** | Completed Test 106 on Cloud-V and EPCC, archived Test 107 status and limits |
+| [[RVV-VLA-Case-Study]] | Historical E14 exploration and final frozen A2 distinguished by baseline |
 | [[JSON-Workload-Metadata]] | A forward-looking, falsifiable architecture proposal |
 | [[Reading-List]] | Selected academic literature with persistent links |
 | [[Governance-and-Rights]] | AI contribution policy, independent software licensing and nonpublic future direction |
@@ -27,7 +28,7 @@ The central question is not simply whether a parser ran faster. It is **how an o
 
 > **Project independence.** The laboratory and the optimized engine are separate from upstream simdjson; see [[Governance-and-Rights]]. A potential semantic ecosystem roadmap remains nonpublic.
 
-> **Evidence status.** This is a public working research project, not a peer-reviewed publication. Performance figures are attributed to their source campaigns; they are not universal speed guarantees. The proposed JSON workload metadata has not been validated experimentally.
+> **Evidence status (updated 19 October 2026).** Final Test 106 native evidence covers **167,835 rows on two RISC-V hosts** and DOM **1.6007× / 1.8946× against official v5.0.4 fallback** on 18 public JSONs, but 95 tiny files regress. Historical Test 107 is `ENGINE PASS` with a release-signoff **HOLD**. This is a working project, not peer reviewed or a universal speed guarantee; the JSON metadata hypothesis is untested.
 
 ---
 

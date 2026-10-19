@@ -1,3 +1,12 @@
+## Test 106/107 evidence publication gate (added 19 October 2026)
+
+- [x] State the completed Test 106 **18-document equal-weight confirmation** ratios and the **official v5.0.4 fallback** comparator; do not substitute the earlier v5.0.3 VLS256 baseline.
+- [x] Publish the 95-tiny-file and `NL4` negative findings alongside the 18-file positive results.
+- [x] Preserve the **historical** `ENGINE PASS` / `HOLD_CI_AND_RELEASE_SIGNOFF` Test 107 verdict; label CI #78 as *subsequent and separate-repository x86/default* evidence.
+- [x] Recalculate the bundled derivative 18-row CSV and check five frozen C++ file hashes (document-only verification).
+- [ ] Obtain and hash the **two original raw Test 106 native ZIPs**; independently recheck all 167,835 rows if claiming raw verification.
+- [ ] Obtain a maintainer-reviewed signed release decision and **immutable source Git commit/tag**; verify exact-source identity for future CI/memory-safety claims.
+
 # Pre-publication checklist
 
 - [ ] Confirm the formal publishing name, coauthors and acknowledgement policy.

@@ -12,6 +12,24 @@ The publicly described engine-library experiment extends simdjson 5.0.3 using an
 
 The pattern catalogue enumerates 15 hypotheses, E00–E14, plus comparison configurations in experiment campaigns. E14 disables selected packed-control/index paths in a workload-aware plan. It must not be described as a general-purpose universal winner.
 
+## Final frozen native evidence — Test 106 (18 October 2026)
+
+A separate, completed release-candidate qualification tested **VectorPath-RVV A2 stable** with two native RISC-V toolchains (Cloud-V GCC, EPCC Clang 16). The primary confirmation comparison is **DOM throughput vs official simdjson 5.0.4 fallback** on **18 pinned public JSON files**, weighted equally by file after within-file paired geometric aggregation.
+
+| Item | Cloud-V | EPCC |
+|---|---:|---:|
+| Stable / official 5.0.4 fallback | **1.6007× (+60.07%)** | **1.8946× (+89.46%)** |
+| Stable / original A2 | **1.00001×** | **0.99959×** |
+| Recorded measurement rows (all strata) | 92,435 | 75,400 |
+| JSONTestSuite verdicts, no discrepancies reported | 340/340 | 340/340 |
+| Stable release-candidate performance gate | PASS | PASS |
+
+All 18 public input ratios favor stable versus **fallback** on both machines, but **95 tiny valid JSONTestSuite files** gave only **0.6665× / 0.8497×** stable/fallback. The optional `NL4` Stage 2 decoder fails Cloud-V's predeclared public non-regression gate. The original A2 and stable binaries are SHA-256-identical **within**, not between, hosts.
+
+**Historical Test 107:** `ENGINE PASS` but **`HOLD_CI_AND_RELEASE_SIGNOFF`**; later CI #78 in a separate repository is supplementary x86/default-implementation fuzz/Valgrind evidence, not native RVV memory-safety certification or final maintainer sign-off. The two original Test 106 raw native ZIPs were **not supplied with this AI-Orch update**; the included 18-row table was locally recomputed and five C++ hashes verified from the supplied frozen source snapshot. See [full evidence](FINAL_NATIVE_RESULTS_2026-10-18.md).
+
+**Non-comparability:** this final A2 comparison has a different engine, official baseline, data and protocol than the 11 October E14/official VLS256 study below; neither figure supersedes the other on its own estimand.
+
 ## Historically reported native results
 
 | Study | Observations | E14 vs official simdjson VLS256 | Boundary |
@@ -31,7 +49,7 @@ A workload rich in string escapes reportedly produced an E14 Stage 1 ratio near 
 2. The documented correctness gates cover a finite set of valid and invalid inputs, including meaningful UTF-8 cases, but do not establish exhaustive JSON compliance or memory safety.
 3. Some input families are synthetic, and small/large data may reuse content. Repeated measurements are not independent workload samples.
 4. Results are from a limited hardware environment; VLEN-agnostic intent does not establish equal behavior or performance on all vector lengths.
-5. Later adaptive and broader protocols (e.g., A1/A2 and multi-corpus prequalification) must be reported as proposed, locally checked or native-tested **according to the evidence available for each run**, never promoted from a plan to a finding.
+5. The later A2 stable Test 106 was **actually completed natively on two hosts**, but its confirmation population and official fallback comparator are **not interchangeable** with these historical E14/VLS256 results. Tests without published native data remain plans, not findings.
 
 ## Why this belongs in a methods paper
 

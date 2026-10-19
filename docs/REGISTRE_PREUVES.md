@@ -11,13 +11,27 @@
 | F05 | Smoke 169 valides / 24 invalides par candidat dans la campagne 8 h | **Rapport de campagne** | Même rapport, section validation | Ne prouve pas la conformité générale |
 | F06 | Code mesuré issu d'une copie de travail modifiée | **Lacune reconnue** | Même rapport, méthodologie | SHA amont insuffisant pour reconstruction exacte |
 | F07 | Test 88 : zéro observation de performance après erreur d'itérations | **Échec documenté** | `docs/TEST89_CORRECTED_PREQUAL_60M.md` | Ne pas convertir en succès ou en gain |
-| F08 | Tests 89/90 : protocoles de confirmation distincts | **Protocole**, pas résultat | `docs/TEST89...`, `docs/TEST90...` | Ne pas revendiquer leurs résultats sans paquet de mesure |
-| F09 | Nouvelle extension « dual machine » | **Outillage fourni** | Archive v6.3 jointe, `README-DUAL-MACHINE.md` | Pas de reproduction matérielle vérifiée dans la pièce |
+| F08 | Tests 89/90 : protocoles initiaux de confirmation | **Statut historique de la version initiale du dossier** | `docs/TEST89...`, `docs/TEST90...` | Ne pas le substituer aux mesures finales du Test 106 |
+| F09 | Extension « dual machine » historique | **Outillage décrit** | Documentation historique de l'extension | L'outillage seul ne prouvait pas l'exécution ; le Test 106 atteste ensuite deux hôtes natifs différents |
 | H01 | L'orchestration IA rend l'exploration plus accessible | **Hypothèse / étude qualitative** | Déclaration de méthode de l'auteur | Pas de groupe témoin ni d'attribution causale |
 | H02 | Le profil du document permet un meilleur moteur | **Motivation empirique** | Différences par famille F03-F04 et Rice (1976) | Gain total non calculé ; coût de sélection inconnu |
 | H03 | Une métadonnée externe réduit le coût de classement | **Proposition non testée** | `HYPOTHESE_METADATA_JSON.md` | Production/transport/validation pourraient annuler le gain |
 | I01 | Aristote annonce les abstractions informatiques | **À ne pas affirmer** | Métaphysique IX ; SEP | Analogie, non prévision historique |
 | I02 | L'IA rend l'expertise de codage caduque | **À ne pas affirmer** | Aucun résultat ne le démontre | Nécessité de validation et de maintenance |
+
+## Résultats natifs finaux — nouvelle strate de preuve (18 octobre 2026)
+
+| ID | Affirmation | Statut | Pièce | Limite majeure |
+|---|---|---|---|---|
+| F10 | Test 106 stable vs fallback officiel v5.0.4 sur 18 JSON publics : **1,6007× Cloud-V / 1,8946× EPCC** DOM | **Mesures natives terminées, résumé CSV recalculé localement** | [Table de 18 fichiers](../evidence/TEST106_Public_18JSON_PerDocument_Results_EN.csv) ; [rapport](https://github.com/MA-Gustave/VectorPath-RVV/blob/main/docs/release/TEST106_PUBLICATION_REPORT_EN.md) | Référence fallback v5.0.4 ; différente du VLS256 v5.0.3 historique. ZIP bruts d'origine non joints |
+| F11 | **167 835 mesures**, 92 435 et 75 400, toutes strates/variantes | **Rapport natif** | [Test 106](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/results/releases/test106/TEST106_VectorPath_RVV_Final_Native_Performance_Report_EN.md) | Les lignes répétées ne sont pas des charges indépendantes |
+| F12 | Stable/A2 **1,00001× / 0,99959×**, seuils de non-régression atteints ; ELF identiques par hôte | **Qualification native rapportée ; cinq SHA-256 C++ vérifiés** | [Manifeste gelé](https://github.com/MA-Gustave/VectorPath-RVV/blob/main/docs/release/FROZEN_SOURCE_MANIFEST.json) | Aucune preuve d'un tag Git et pas de reconstruction rétroactive du checkout historique |
+| F13 | **340/340 JSONTestSuite par machine sans divergence signalée** et régression sur **95 très petits JSON : 0,6665× / 0,8497×** | **Résultat conformance/performance** | [Rapport Test 106](https://github.com/MA-Gustave/VectorPath-RVV/blob/main/docs/release/TEST106_PUBLICATION_REPORT_EN.md) | Couverture finie, pas de certification mémoire RVV |
+| F14 | Variante NL4 rejetée par seuil Cloud-V (~0,9797× sur twitterescaped) | **Échec expérimental documenté** | [CSV dérivé](../evidence/TEST106_Public_18JSON_PerDocument_Results_EN.csv) | Bénéfices synthétiques non généralisables |
+| F15 | Audit historique Test 107 : **ENGINE PASS**, mais **`HOLD_CI_AND_RELEASE_SIGNOFF`** | **Audit archivé** | [Test 107](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/results/releases/test107/TEST107_FORMAL_RELEASE_AUDIT_EN.md) | La CI #78 ultérieure ne change pas son statut d'origine |
+| F16 | CI #78 réussie sur dépôt lié x86/default | **Preuve de CI distincte** | [CI #78](https://github.com/MA-Gustave/Simdjson-rvv-vla/actions/runs/39155386567) | Pas d'identité garantie avec les sources gelées, ni Valgrind RVV natif |
+
+**Contrôles locaux de cette mise à jour :** SHA-256 du CSV dérivé et moyenne géométrique des 18 fichiers ; cinq empreintes de code C++ comparées au manifeste. Les deux archives originales natives Cloud-V/EPCC, le contenu complet des artefacts CI et tout tag Git final **n'ont pas été vérifiés ici**. Voir le [dossier final](RESULTATS_NATIFS_FINAUX_2026-10-18.md).
 
 ## Références source (relatives aux dépôts réels)
 

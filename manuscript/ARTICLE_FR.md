@@ -1,6 +1,6 @@
 # Au-delà de l'écriture du code : automatisation des niveaux de complexité et développement expérimental orchestré par IA
 
-**Manuscrit de travail — 13 octobre 2026.** Auteur, affiliation et DOI à compléter. **Non soumis, non évalué par des pairs.**
+**Manuscrit de travail — actualisé le 19 octobre 2026 avec les preuves natives finales du 18 octobre.** Auteur, affiliation et DOI à compléter. **Non soumis, non évalué par des pairs.**
 
 ## Résumé
 
@@ -68,7 +68,23 @@ La diversité des résultats est scientifiquement plus instructive que le classe
 
 Cette lecture exige plusieurs réserves : la suite de correction n'est pas exhaustive ; les essais proviennent d'un matériel principal et de corpus en partie synthétiques ; des observations répétées ne constituent pas des échantillons indépendants ; surtout, la version historiquement mesurée provenait d'un **checkout modifié**, que le seul SHA amont ne permet pas de reconstruire à l'identique. Les détails chiffrés et le statut de chaque campagne sont consignés dans le [registre des preuves](../docs/REGISTRE_PREUVES.md).
 
-Le **Test 88**, conçu pour élargir l'exploration, a échoué avant de produire des observations de performance à cause d'un décalage entre le nombre d'itérations demandé et la limite acceptée par le banc natif. Cet échec documenté est méthodologiquement important : la production automatisée d'expériences amplifie aussi les erreurs d'orchestration. Les Test 89/90 apparaissent dans les documents consultés comme protocoles, et non comme preuves de gains natifs déjà établis.
+Le **Test 88**, conçu pour élargir l'exploration, a échoué avant de produire des observations de performance à cause d'un décalage entre le nombre d'itérations demandé et la limite acceptée par le banc natif. Cet échec documenté est méthodologiquement important : l'automatisation peut amplifier les erreurs d'orchestration. Les documents initiaux des Tests 89/90 décrivaient des protocoles ; leur statut historique ne doit pas être confondu avec la **qualification native ultérieure, achevée, du Test 106**.
+
+### 5.1. Résultats finaux du candidat stable A2 (18 octobre 2026)
+
+Le **Test 106 natif terminé** a qualifié un candidat différent, **VectorPath-RVV stable**, sur **Cloud-V (GCC)** et **EPCC (Clang 16)**. Il totalise **92 435 + 75 400 = 167 835 lignes de mesure**, toutes variantes et strates confondues. Le profil figé est **RVV-VLA, dispatch adaptatif A2 niveau 2 / 16 Kio, chemins packed désactivés et Stage 2 original** ; les optimisations facultatives `SIMPLE_RUN` et `NL4` ne sont pas activées par défaut.
+
+Sur **18 fichiers JSON publics épinglés**, la phase de confirmation donne des rapports géométriques de débit DOM appariés, **à poids égal par document**, de **1,6007× (+60,07 %) sur Cloud-V** et **1,8946× (+89,46 %) sur EPCC**, contre le **fallback officiel de simdjson 5.0.4**. Le fork VectorPath provient quant à lui de **simdjson 5.0.3**. Les rapports séparés Stage 1 (**2,0376× ; 2,5035×**) et Stage 2 (**1,2727× ; 1,4687×**) ne s'additionnent pas au DOM. Le fallback 5.0.4 n'est ni le VLS256 5.0.3 de l'étude historique ni le meilleur backend disponible partout.
+
+La question centrale du Test 106 était la **non-régression par rapport au profil A2 original** : stable/A2 vaut **1,00001×** et **0,99959×**, avec des **SHA-256 ELF identiques** au témoin A2 sur chaque hôte. Le critère fixé à l'avance (moyenne ≥0,995× et aucun des 18 documents sous 0,980×) est satisfait. **340 cas JSONTestSuite par machine** ont été exécutés, sans divergence signalée, sans constituer une preuve exhaustive de conformité ou de sûreté mémoire.
+
+Des **régressions** sont à conserver : sur **95 très petits JSON valides** (2–110 octets), stable/fallback descend à **0,6665× Cloud-V** et **0,8497× EPCC**. L'option `NL4` échoue au critère de non-régression Cloud-V (environ **0,9797×** sur `twitterescaped.json`) et reste désactivée. Les gains sur échappements synthétiques concernent des populations diagnostiques distinctes du corpus public.
+
+Le **Test 107**, audit documentaire sans nouveau test natif, conclut historiquement **`ENGINE PASS`** mais **`HOLD_CI_AND_RELEASE_SIGNOFF`**. Une CI **#78** ultérieure est passée dans **un autre dépôt**, avec fuzz/sanitizers et tests Valgrind partiels sur **x86/default** ; ni l'identité exacte des sources VectorPath ni une certification Valgrind native RVV ne sont établies. Cette CI ne modifie pas rétroactivement la conclusion historique et n'établit aucun tag Git figé ni autorisation finale de publication.
+
+Pour cette mise à jour, les **18 lignes du CSV dérivé** ont permis de recalculer les moyennes géométriques, et **cinq fichiers C++ gelés** ont été contrôlés par SHA-256. Les **deux archives natives brutes d'origine** n'étaient pas jointes : aucune réexécution native ni réanalyse exhaustive de ces archives n'est revendiquée. Voir le [dossier de preuves final](../docs/RESULTATS_NATIFS_FINAUX_2026-10-18.md).
+
+**Comparabilité :** le plan E14 historique du 11 octobre, face au **VLS256 officiel 5.0.3** sur BPI-F3, ne peut pas être directement comparé au candidat A2 stable du 18 octobre face au **fallback 5.0.4** : moteur, corpus, machines et procédure diffèrent.
 
 ### Gouvernance indépendante et limites des autorisations
 

@@ -5,7 +5,7 @@
 **Beyond writing code: automation, higher-level abstraction, and experimentally grounded software development.**
 
 **A research manuscript and open documentation project by Gustave · Abstract Mechanisms.**  
-**Status:** working manuscript / public research notes · **13 October 2026** · **not peer reviewed**.
+**Status:** working manuscript / public research notes · **updated 19 October 2026** with 18 October final native evidence · **not peer reviewed**.
 
 > **Central proposition.** When technical operations become sufficiently reliable and automated, human work can shift toward the design, coordination and assessment of higher-level systems. Generative AI may extend this shift from compilation and model transformation to implementation, experiment construction and evidence analysis. This does *not* mean that code, programmers, or low-level expertise have become unnecessary.
 
@@ -21,8 +21,10 @@ The central contribution is **not a record JSON parsing speedup**. This reposito
 | [Research thesis and scope](docs/THESIS_AND_SCOPE.md) | What is proposed, observed, and not demonstrated |
 | [Conceptual framework](docs/CONCEPTUAL_FRAMEWORK.md) | Aristotle, Simon, Licklider, Engelbart, automation |
 | [Public research method](docs/PUBLIC_METHOD.md) | Patterns → candidate plans → experiments → reports → revision |
-| [RVV-VLA case study](docs/RVV_VLA_CASE_STUDY.md) | Primary results, provenance and limitations |
+| **[Final native evidence — Test 106/107](docs/FINAL_NATIVE_RESULTS_2026-10-18.md)** | Frozen A2 stable, two native hosts, 18-file dataset, negative findings and historical release hold |
+| [RVV-VLA case study](docs/RVV_VLA_CASE_STUDY.md) | Historical E14 vs final A2: different baselines, methods and claim boundaries |
 | [Evidence ledger](docs/EVIDENCE_LEDGER.md) | Claims, source links, evidence category and caveats |
+| [18-document CSV](evidence/TEST106_Public_18JSON_PerDocument_Results_EN.csv) / [verification script](scripts/verify-test106-summary.py) | Derivative public-file table and recalculation, not native raw archives |
 | [JSON workload metadata hypothesis](docs/JSON_METADATA_HYPOTHESIS.md) | Optional hints for workload-aware engine choice |
 | [Research questions](docs/RESEARCH_QUESTIONS.md) | Falsifiable hypotheses and evaluation plans |
 | [Annotated references](references/REFERENCES.md) / [BibTeX](references/references.bib) | Academic foundations and related work |
@@ -53,7 +55,17 @@ The current RVV-VLA E00–E14 set consists of **15 fixed experimental configurat
 - [Stage 1 / Stage 2 / DOM study](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/results/2026-10-11-stage-profile-8h.md).
 - [Measurement methodology](https://github.com/MA-Gustave/VLA-MethodLab/blob/main/docs/METHODOLOGY.md).
 
-**Reported, not independently replicated here:** the 11 October 2026 native campaign reports 6,887 measurements and paired geometric-mean ratios for E14 versus official VLS256 of **1.502× DOM**, **1.601× Stage 1**, **1.298× Stage 2**. A substantial Stage 1 regression is also documented for heavily escaped strings. These are workload- and machine-specific values, not universal improvements. The historical source was a modified working tree: the upstream commit SHA alone cannot reconstruct the precise measured code. See the [evidence ledger](docs/EVIDENCE_LEDGER.md).
+### Final frozen native release evidence — 18 October 2026
+
+**Test 106, completed on two native RISC-V targets:** the frozen **VectorPath-RVV A2 stable** release candidate delivered paired, equal-document geometric-mean **DOM throughput ratios** against the **official simdjson 5.0.4 *fallback*** of **1.6007× (+60.07%) on Cloud-V** and **1.8946× (+89.46%) on EPCC** on **18 public JSON files**. These measurements belong to **167,835 recorded rows** in all Test 106 strata (92,435 + 75,400), **not** 167,835 independent documents. The stable engine matches the previous A2 reference within measurement variation (**1.00001×** and **0.99959×**), and its ELFs are SHA-256-identical to old A2 **within each host**. Both engines pass the specified release-candidate performance threshold and report **340/340 JSONTestSuite cases per host without observed disagreement**.
+
+**Crucial negatives:** on **95 valid tiny JSON files** (2–110 bytes), stable is **0.6665×** of fallback on Cloud-V and **0.8497×** on EPCC. The optional `NL4` decoder failed the Cloud-V public non-regression gate and is not shipped by default. Test 107 reported **`ENGINE PASS` but `HOLD_CI_AND_RELEASE_SIGNOFF`** at the time of its read-only audit. A subsequent related-repository CI #78 success is **x86/default-implementation supporting evidence**, not native RVV Valgrind certification, exact frozen-source identity or retroactive release approval. The supplied archives do not establish a public immutable release tag or signed maintainer approval.
+
+**What we verified in this update:** the 18-row derivative CSV reproduces the 1.6007× / 1.8946× geometric means, and the five C++ files listed in the frozen manifest match the supplied VectorPath source. We did **not** receive the two original Test 106 raw native ZIPs, and did not repeat the benchmarks. See the [full bilingual evidence summary](docs/FINAL_NATIVE_RESULTS_2026-10-18.md) / [résultats en français](docs/RESULTATS_NATIFS_FINAUX_2026-10-18.md), [18-document data](evidence/README.md), and [evidence ledger](docs/EVIDENCE_LEDGER.md).
+
+### Earlier exploratory evidence — distinct comparison
+
+The **11 October 2026** native E14 stage-profile campaign reported **6,887 observations** and geometric-mean ratios **1.502× DOM, 1.601× Stage 1, 1.298× Stage 2**, all against **official simdjson 5.0.3 VLS256** on a BPI-F3. Escape-heavy Stage 1 regressions occurred. This historical campaign remains evidence for the experimental process; it is **not** the final A2 release benchmark, and its baseline/corpus/machine/protocol differ from Test 106. The historical source was a modified working tree and its upstream SHA cannot reconstruct all measured bytes.
 
 ## Independent research governance and software rights
 
