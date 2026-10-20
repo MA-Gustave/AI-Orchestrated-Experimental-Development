@@ -6,7 +6,7 @@ Use [issues and pull requests in the main repository](https://github.com/MA-Gust
 
 Please preserve reported failures and regressions instead of highlighting only improvements. Do not upload credentials, private prompts, unapproved personal communications, or unsupported allegations about contributors. Respect upstream simdjson copyright and licensing.
 
-**Identity:** Gustave · Abstract Mechanisms. This is a working English-language research wiki, not a journal or a claim of institutional endorsement.
+**Identity:** Gustave · Abstract Mechanisms. This research wiki accompanies a [published Zenodo preprint](https://doi.org/10.5281/zenodo.23503438) (20 October 2026). The preprint is not peer reviewed, and publication does not imply institutional endorsement.
 
 **Back:** [[Home]]
 

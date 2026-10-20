@@ -2,6 +2,10 @@
 
 These papers provide **prior art and conceptual context**, not proof that this project originated their ideas.
 
+## Published article from this project
+
+- **Leblanc, Gustave (2026)**. [*Beyond Writing Code: Automation-Driven Abstraction Shifts in AI-Orchestrated Experimental Software Development*](https://doi.org/10.5281/zenodo.23503438). Zenodo, v1, preprint (not peer reviewed). DOI: `10.5281/zenodo.23503438`.
+
 ## Hierarchy, augmentation and supervision
 
 - Aristotle, *Metaphysics* VII–IX; *De Anima* II.1. Overview: [Stanford Encyclopedia of Philosophy — Form vs. Matter](https://plato.stanford.edu/entries/form-matter/).

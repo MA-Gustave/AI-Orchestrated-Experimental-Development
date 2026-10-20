@@ -1,5 +1,7 @@
 # Beyond Writing Code: AI-Orchestrated Experimental Development and the Automation of Complexity
 
+> **Published preprint (20 October 2026):** Gustave Leblanc, *Beyond Writing Code: Automation-Driven Abstraction Shifts in AI-Orchestrated Experimental Software Development*, Zenodo v1, DOI [10.5281/zenodo.23503438](https://doi.org/10.5281/zenodo.23503438). This Markdown manuscript is an earlier/living research text and is not a byte-identical copy of the deposited PDF; cite the Zenodo record for the published version. The preprint has not been peer reviewed.
+
 **Working manuscript · revised 19 October 2026 with final native evidence from 18 October · Not peer reviewed**  
 **Author:** Gustave (public project identity; final academic byline to be confirmed)  
 **Project:** Abstract Mechanisms  

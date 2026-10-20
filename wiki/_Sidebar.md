@@ -1,5 +1,7 @@
 **Research Wiki**
 
+**[Published preprint · DOI](https://doi.org/10.5281/zenodo.23503438)**
+
 - [[Home]]
 - [[Research-Thesis]]
 - [[Conceptual-Framework]]

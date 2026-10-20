@@ -5,7 +5,11 @@
 **Beyond writing code: automation, higher-level abstraction, and experimentally grounded software development.**
 
 **A research manuscript and open documentation project by Gustave · Abstract Mechanisms.**  
-**Status:** working manuscript / public research notes · **updated 19 October 2026** with 18 October final native evidence · **not peer reviewed**.
+**Status:** **preprint published on Zenodo on 20 October 2026**; living repository manuscript and public research notes remain under revision · **not peer reviewed**.
+
+[![Published preprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23503438.svg)](https://doi.org/10.5281/zenodo.23503438)
+
+**Published scientific preprint:** **Gustave Leblanc** (2026), *Beyond Writing Code: Automation-Driven Abstraction Shifts in AI-Orchestrated Experimental Software Development*, **Zenodo v1**. **DOI: [10.5281/zenodo.23503438](https://doi.org/10.5281/zenodo.23503438)** · [Publication record and PDF](https://zenodo.org/records/23503438). This is a public, citable **preprint, not a peer-reviewed journal article**. The Zenodo record is version `v1`; the deposited PDF filename contains `v1.3` (editorial manuscript version).
 
 > **Central proposition.** When technical operations become sufficiently reliable and automated, human work can shift toward the design, coordination and assessment of higher-level systems. Generative AI may extend this shift from compilation and model transformation to implementation, experiment construction and evidence analysis. This does *not* mean that code, programmers, or low-level expertise have become unnecessary.
 
@@ -15,7 +19,8 @@ The central contribution is **not a record JSON parsing speedup**. This reposito
 
 | Resource | What it covers |
 | --- | --- |
-| **[Full research manuscript](manuscript/ARTICLE_EN.md)** | Main argument, literature, case study, hypotheses, limitations |
+| **[Published preprint — Zenodo DOI](https://doi.org/10.5281/zenodo.23503438)** | **Canonical citable deposit** (Gustave Leblanc, 20 October 2026; not peer reviewed) |
+| [Full research manuscript](manuscript/ARTICLE_EN.md) | Living repository manuscript, **not byte-identical** to deposited PDF |
 | [Abstract](manuscript/ABSTRACT_EN.md) | Concise overview for readers and prospective reviewers |
 | [Research governance and rights](docs/INDEPENDENT_GOVERNANCE_AND_ROADMAP.md) | AI contribution rules, independent licensing boundary and confidential future direction |
 | [Research thesis and scope](docs/THESIS_AND_SCOPE.md) | What is proposed, observed, and not demonstrated |
@@ -29,7 +34,8 @@ The central contribution is **not a record JSON parsing speedup**. This reposito
 | [Research questions](docs/RESEARCH_QUESTIONS.md) | Falsifiable hypotheses and evaluation plans |
 | [Annotated references](references/REFERENCES.md) / [BibTeX](references/references.bib) | Academic foundations and related work |
 | [Wiki source](wiki/Home.md) / [Wiki publishing instructions](docs/WIKI_PUBLISHING.md) | Navigable wiki, stored here as the reviewable source of truth |
-| [Publication checklist](docs/PRE_PUBLICATION_CHECKLIST.md) | Checks before a DOI, preprint or conference submission |
+| **[Publication record and citation](docs/PUBLISHED_PREPRINT_2026-10-20.md)** | Verified Zenodo metadata, APA/BibTeX, DOI, evidence scope |
+| [Publication checklist](docs/PRE_PUBLICATION_CHECKLIST.md) | Remaining future-release and potential journal submission checks |
 | **[Publish at MA-Gustave on GitHub](docs/PUBLISH_TO_GITHUB.md)** | GitHub CLI / Git instructions, separate Wiki deployment |
 
 ## Working model
@@ -90,7 +96,7 @@ A scientific argument requires a stable place for its text, references, correcti
 
 ## Author identity, confidentiality and citation
 
-**Public project attribution:** Gustave, under the *Abstract Mechanisms* research identity. Formal publication names, potential coauthors, ORCID, DOI and licensing of the original written material require deliberate confirmation. [Citation template](CITATION.cff.example) is not an assertion of a legal name or DOI. Keep original simdjson copyright and licence notices intact and distinguish upstream work from RVV-VLA changes.
+**Published preprint author:** **Gustave Leblanc** (listed on Zenodo as Leblanc, Gustave), dated **20 October 2026**. The project also uses the *Gustave / Abstract Mechanisms* public identity. The preprint has a verifiable DOI: **[10.5281/zenodo.23503438](https://doi.org/10.5281/zenodo.23503438)**. The repository includes a [machine-readable `CITATION.cff`](CITATION.cff) with this preprint as its preferred citation. No ORCID, additional coauthor, journal acceptance or peer-review status is inferred from the Zenodo record. Software and original-source rights remain governed by their respective licenses, not the preprint citation.
 
 Internal prompts and private orchestration procedures are **not included**. This is compatible with a public conceptual paper only insofar as claims that demand reproducibility rely on disclosed experiments, measurements and code; no hidden process is offered as uncheckable evidence of superiority. See [Research integrity](docs/ATTRIBUTION_AND_PRIVACY.md).
 

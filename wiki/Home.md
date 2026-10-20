@@ -9,10 +9,19 @@ This wiki accompanies a research paper on the shift of human effort toward highe
 
 The central question is not simply whether a parser ran faster. It is **how an operator can organize technical research through AI-assisted pattern formulation, candidate generation, native measurement, and evidence-driven revision**.
 
+## Published preprint — 20 October 2026
+
+[![Published preprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23503438.svg)](https://doi.org/10.5281/zenodo.23503438)
+
+**Beyond Writing Code: Automation-Driven Abstraction Shifts in AI-Orchestrated Experimental Software Development** — **Gustave Leblanc**, Zenodo preprint (record version **v1**), https://doi.org/10.5281/zenodo.23503438. This is the public, citable preprint; **it has not been peer reviewed**. The repository manuscript remains an evolving research text and should not be assumed byte-identical to the PDF deposited on Zenodo.
+
+The preprint reports an AI-orchestrated RISC-V Vector JSON development case and distinguishes the 18 October Test 106 native results from earlier E14 exploration. Its methodological claims and measurement limitations should be read together.
+
 ## Start here
 
 | Read | Purpose |
 | --- | --- |
+| [[Publication-and-Citation]] | **Published preprint, DOI, citation formats and version status** |
 | [[Research-Thesis]] | The argument, its boundaries, and the central research question |
 | [[Conceptual-Framework]] | Aristotle, hierarchy, human–machine collaboration, and automation |
 | [[Experimental-Method]] | The disclosed experimental loop and validation responsibilities |
@@ -24,11 +33,11 @@ The central question is not simply whether a parser ran faster. It is **how an o
 
 ## Read the manuscript
 
-[Working academic manuscript](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development/blob/main/manuscript/ARTICLE_EN.md) · [[Publication-and-Citation]] · [Source repository](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development)
+**[Published preprint on Zenodo](https://zenodo.org/records/23503438)** · [Ongoing repository manuscript](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development/blob/main/manuscript/ARTICLE_EN.md) · [[Publication-and-Citation]] · [Source repository](https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development)
 
 > **Project independence.** The laboratory and the optimized engine are separate from upstream simdjson; see [[Governance-and-Rights]]. A potential semantic ecosystem roadmap remains nonpublic.
 
-> **Evidence status (updated 19 October 2026).** Final Test 106 native evidence covers **167,835 rows on two RISC-V hosts** and DOM **1.6007× / 1.8946× against official v5.0.4 fallback** on 18 public JSONs, but 95 tiny files regress. Historical Test 107 is `ENGINE PASS` with a release-signoff **HOLD**. This is a working project, not peer reviewed or a universal speed guarantee; the JSON metadata hypothesis is untested.
+> **Evidence status (updated 20 October 2026).** Final Test 106 native evidence covers **167,835 rows on two RISC-V hosts** and DOM **1.6007× / 1.8946× against official v5.0.4 fallback** on 18 public JSONs, but 95 tiny files regress. Historical Test 107 is `ENGINE PASS` with a release-signoff **HOLD**. The published preprint is not peer reviewed or a universal speed guarantee; the JSON metadata hypothesis is untested.
 
 ---
 

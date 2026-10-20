@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the published Zenodo preprint when referring to the paper; cite the underlying benchmark data and software separately when appropriate."
+title: "AI-Orchestrated Experimental Development"
+authors:
+  - family-names: "Leblanc"
+    given-names: "Gustave"
+repository-code: "https://github.com/MA-Gustave/AI-Orchestrated-Experimental-Development"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Leblanc"
+      given-names: "Gustave"
+  title: "Beyond Writing Code: Automation-Driven Abstraction Shifts in AI-Orchestrated Experimental Software Development"
+  year: 2026
+  doi: "10.5281/zenodo.23503438"
+  url: "https://doi.org/10.5281/zenodo.23503438"
+  notes: "Zenodo preprint, record v1, published 20 October 2026; not peer reviewed."

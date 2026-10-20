@@ -1,3 +1,10 @@
+## 2026-10-20 — Zenodo preprint publication and citation
+
+- Linked the published *Beyond Writing Code* preprint, with verified author **Gustave Leblanc**, record version **v1** and DOI **10.5281/zenodo.23503438**.
+- Added canonical citation metadata (`CITATION.cff`) and a specific preprint record in `docs/PUBLISHED_PREPRINT_2026-10-20.md`.
+- Updated repository README and matching GitHub Wiki source (Home, Publication-and-Citation, Reading-List, Contributing, Sidebar) without modifying historical native experimental claims.
+- Distinguished the public preprint from the living repository manuscript; no peer review or GitHub deployment is asserted.
+
 ## 2026-10-19 — Final native Test 106/107 evidence integration
 
 - Added bilingual, source-scoped native-result statements from the supplied 18 October 2026 VectorPath and MethodLab snapshots.
